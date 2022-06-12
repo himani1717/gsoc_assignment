@@ -1,20 +1,33 @@
-#include <bits/stdc++.h>
-using namespace std;
+class Solution {
+public:
+    bool isprime(int n)
+    {
+        if (n <= 1)
+        {
+            return 0;
+        }
+        for (int i = 2; i<=sqrt(n); i++)
+        {
+            if (n % i == 0)
+            {
+                return 0;
+            }
+            
+        }
+        return 1;
+       
+    }
+    int countPrimes(int b)
+    {
+        int count=0;
+        for(int i=0;i<b;i++)
+        {
+            if(isprime(i)==1)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
 
-void update(int *a,int *b) 
-{
-    int pa = *a + *b;
-    int pb = *a - *b;
-    
-    cout << pa << endl;
-    cout << abs(pb);    
-}
-
-int main() {
-    int a, b;
-    int *pa = &a, *pb = &b;
-    
-    scanf("%d %d", &a, &b);
-    update(pa, pb);
-    return 0;
-}
+};
