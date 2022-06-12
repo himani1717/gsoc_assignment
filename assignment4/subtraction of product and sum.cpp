@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
+class Solution{
+    public:
    
 int p=1,s=0;
 int subtractProductAndSum(int n)
@@ -14,9 +14,5 @@ int subtractProductAndSum(int n)
     }
     return p-s;
 }
-int main()
-{
-    int n;
-    cout << subtractProductAndSum(n);
-    return 0;
-}
+
+};
