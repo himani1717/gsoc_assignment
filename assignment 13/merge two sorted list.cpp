@@ -1,3 +1,13 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
    
@@ -9,12 +19,12 @@ public:
             return list1;
         ListNode* temp=list1;
         if(list1->val < list2->val){
-           temp=list2;
-            list2=list2->next;
+           temp=list1;
+            list1=list1->next;
         }
         else{
-              temp=list1;
-            list1=list1->next;   
+              temp=list2;
+            list2=list2->next;   
         }
         ListNode* sort = temp;
         while(list1 && list2){
