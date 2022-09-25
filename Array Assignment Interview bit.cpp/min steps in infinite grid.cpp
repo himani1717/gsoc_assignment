@@ -6,3 +6,4 @@ int Solution::coverPoints(vector<int> &A, vector<int> &B) {
     return ans;
     
 }
+// abs used here symbolises for absolute
