@@ -12,5 +12,5 @@ public:
             return 1;
         return Validate(root,LONG_MIN,LONG_MAX);
         
-     }
+    }
 };
