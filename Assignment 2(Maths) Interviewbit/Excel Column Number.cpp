@@ -1,4 +1,4 @@
-int Solution::titleToNumber(string A) {    
+int Solution::titleToNumber(string A) {  
     int size = A.size();
     int s=0;
     int j=size-1;
